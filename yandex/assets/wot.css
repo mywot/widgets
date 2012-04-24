@@ -1,0 +1,87 @@
+body {
+    font-family: arial verdana;
+    font-size: 12pt;
+    margin: 0;
+}
+
+/** {*/
+    /*border: silver solid 1px;*/
+/*}*/
+
+.b-pseudo-link {
+    border-bottom: dashed 1px #4169e1;
+    color: #4169e1;
+    cursor: pointer;
+}
+
+#container {
+    width: 100%;
+    width: 250px; /* for dev only */
+}
+
+.site-line {
+    width: 100%;
+}
+
+.line-wrapper {
+    position: relative;
+}
+
+.wot-rep, .wot-conf, .site-name, .wot-numbers, .wot-rvalue, .wot-divider {
+    display: inline-block;
+}
+
+.wot-rep {
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    background: url(r1.png) left top no-repeat;
+}
+
+.wot-conf {
+    width: 45px;
+    height: 16px;
+    background: url(conf-1.png) left top no-repeat;
+}
+
+.site-name {
+    position: absolute;
+    left: 74px;
+    top: 2px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.link-scorecard, .link-scorecard:visited {
+    color: #1A3DC1;
+}
+
+.wot-numbers {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    cursor: default;
+}
+
+.wot-changes {
+    font-size: 9pt;
+    color: grey;
+}
+
+.wot-increased {
+    vertical-position: superscript;
+    color: green;
+}
+
+.wot-decreased {
+    vertical-position: subscript;
+    color: red;
+}
+
+
+.wot-rvalue {
+}
+
+.wot-prompt {
+    display: none;
+}

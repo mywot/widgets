@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+		PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>WOT reputation</title>
+	<link href="assets/wot.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+	<div id="container">
+
+		<div class="wot-prompt">
+			<span class="b-pseudo-link">Добавить сайт</span>
+		</div>
+
+	</div>
+
+	<!-- Template for site line  -->
+	<script id="siteLine" type="text/x-jquery-tmpl">
+		<div class="site-line">
+			<div class="line-wrapper">
+				<div class="wot-rep wot-rep_${ r_icon }"/>
+				<div class="wot-conf wot-conf_${ c }"/>
+				<div class="site-name">
+					<a href="${ url_scorecard }/${ name }?utm_source=yndx&amp;medium=widget" target="_blank" class="link-scorecard">${ name }</a>
+				</div>
+				<div class="wot-numbers">
+					<div class="wot-rvalue" title="текущее значение">${ r }<span title="изменение за сутки" class="wot-changes wot-increased">${ change }</span></div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/javascript" src="//img.yandex.net/webwidgets/2/WidgetApi.js"></script>
+	<script type="text/javascript" src="//ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="assets/wot.js"></script>
+
+
+</body>
+</html>
